@@ -897,7 +897,7 @@ def door_unlocking(time_decoder_input):
             print("The box clicks open!")
             print("A piece of paper lies inside.")
             print("You can't read the wording on the parchment, however. Best to return this to HQ immediately.")
-            story_items["parchment"]
+            story_items["parchment"] = 1
 
             time_decoder_input.time = 0
             
@@ -930,7 +930,7 @@ def door_unlocking(time_decoder_input):
             print("The box clicks open!")
             print("A stone lies in the box. It doesn't seem like anything special. But there may be something else unseen.")
             print("Best to return the stone to HQ at once.")
-            story_items["stone"]
+            story_items["stone"] = 1
 
             time_decoder_input.time = 0
         
@@ -970,7 +970,8 @@ def door_unlocking(time_decoder_input):
             print("The box clicks open!")
             print("Inside the box lies a key. It's made of brass and has a big clover on the end.")
             print("It seems important. HQ should take a look immediately.")
-            story_items["clover_key"]
+            print("Lets return to base and make sure they get it.")
+            story_items["clover_key"] = 1
 
             time_decoder_input.time = 0
         
